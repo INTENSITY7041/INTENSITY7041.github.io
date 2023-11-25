@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="ZEE_choices_css.css">
+        <title>How are you feeling</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="reorder-two-outline"></ion-icon>
+                </div>
+                <div class="homeLink">
+                    <a href="../Landing/ZEE_landing.html" class="nav__logo">Return</a>
+                </div>
+
+               
+                
+            </nav>
+        </header>           
+
+        <!-- MAIN -->
+        <main class="main-bg">
+            <!-- HOME -->
+            <div class="home">
+                
+                <div class="home__primary">
+                    <a  href="../Good/ZEE_good-html.html">
+                    <h1 class="home__title"><button class="span1" onmouseover="myFunction()" onmouseout="myFunc()"><span id="hovered">I am okay!</span></button></h1>
+                    <br/><br/><br/><br/><br/>
+                    <h2 ></h2>
+                    </a>
+                    <div class="home__img">
+                        <img src="suzume2.gif" alt="">
+                    </div>
+                    
+                </div>
+            
+
+                <div class="home__secondary">
+                    
+                    <a  href="../Bad Landing/Zee_bad_landingHMTL.html">
+                    <h1 class="home__year"><button class="span1" onmouseover="myFunction1()" onmouseout="myFunc1()"><span id="hovered1">I am not so good.</span></button></h1>
+                    <br/><br/><br/><br/><br/>
+                    <h2 ></h2>
+                    </a>
+                    
+                </div>
+            </div>
+        </main>
+        
+        <script>
+            
+            function myFunction() {
+                document.getElementById("hovered").innerHTML = "There is more colour this side, <br > hopefully you're leaning <br> more to this side. If you are then click!" ;
+            }
+            function myFunc() {
+                document.getElementById("hovered").innerHTML = "I am okay!";
+            }
+            
+            function myFunction1() {
+                document.getElementById("hovered1").innerHTML = "I'm so sorry to hear this, <br >Hopefully <br> this might cheer you up." ;
+            }
+            function myFunc1() {
+                document.getElementById("hovered1").innerHTML = "I am not so good.";
+            }
+            
+        </script>
+
+        <!-- ICONOS -->
+        <script  type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+        
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- MAIN -->
+        <script src="ZEE_choices_js.js"></script>
+    </body>
+</html>
